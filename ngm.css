@@ -400,3 +400,96 @@ th {
             background-color: #b91c1c;
         }
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* تنسيقات خاصة بالشاشات الصغيرة (الموبايل) */
+@media (max-width: 768px) {
+  
+  /* تقليل حجم الخط في الرأس (Header) */
+  header {
+    padding: 10px 0; /* تقليل الفراغ العلوي والسفلي */
+  }
+  
+  header h1 {
+    font-size: 1.5rem !important; /* تقليل حجم عنوان "متابعة تشطيبات الشقق" */
+    margin-bottom: 5px !important;
+  }
+  
+  header p {
+    font-size: 0.9rem !important; /* تقليل حجم نص الترحيب */
+    margin-bottom: 0 !important;
+  }
+
+  /* تصغير الشعار */
+  header img {
+    max-height: 60px !important; /* تحديد حد أقصى لارتفاع الشعار */
+    width: auto !important;
+  }
+}
+@media (max-width: 768px) {
+  /* ... الكود السابق من الخطوة 1 ... */
+
+  /* جعل حاويات البطاقات (Stats and Lists) تأخذ عرض الشاشة بالكامل */
+  .stats-container, .list-container {
+    padding: 10px !important;
+  }
+
+  /* جعل البطاقات (الإحصائيات وقائمة الشقق) مرنة */
+  .stat-card, .apartment-card {
+    width: 100% !important; /* تأخذ العرض المتاح بالكامل */
+    margin-bottom: 10px !important; /* فراغ بين كل بطاقة */
+    padding: 15px !important; /* تقليل الفراغ الداخلي للبطاقة */
+  }
+  
+  /* تصغير حجم نصوص وعناوين البطاقات */
+  .stat-card h3, .apartment-card h3 {
+    font-size: 1.1rem !important;
+  }
+  
+  .stat-card p, .apartment-card p {
+    font-size: 0.9rem !important;
+  }
+  
+  .stat-card h2, .apartment-card h2 {
+    font-size: 1.8rem !important; /* تصغير الأرقام الكبيرة (الـ 0 والـ 0) */
+  }
+}
+@media (max-width: 768px) {
+  /* ... الأكواد السابقة من الخطوة 1 و 2 ... */
+
+  /* جعل الأزرار (أزرق) تأخذ عرض الشاشة بالكامل ليسهل الضغط عليها */
+  .add-client-btn, .add-daily-update-btn {
+    width: 100% !important;
+    display: block !important;
+    margin-bottom: 15px !important; /* فراغ بين الأزرار */
+    font-size: 1rem !important; /* تكبير حجم خط النص داخل الزر */
+    padding: 12px !important; /* تكبير الفراغ الداخلي للزر */
+  }
+
+  /* جعل عنوان قائمة الشقق/العملاء يتناسب مع الموبايل */
+  .client-list h2, .apartments-list h2 {
+    font-size: 1.3rem !important;
+    text-align: center !important; /* توسيط العنوان */
+  }
+}
